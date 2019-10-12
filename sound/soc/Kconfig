@@ -62,5 +62,8 @@ source "sound/soc/codecs/Kconfig"
 # generic frame-work
 source "sound/soc/generic/Kconfig"
 
+# Supported NXP TFA98xx Smart PA
+source "sound/soc/tfa98xx/Kconfig"
+
 endif	# SND_SOC
 
