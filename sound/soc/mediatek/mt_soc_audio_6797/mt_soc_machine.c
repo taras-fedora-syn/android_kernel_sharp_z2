@@ -1263,7 +1263,7 @@ static struct snd_soc_dai_link mt_soc_dai_common[] = {
 		.init = mt_soc_audio_init,
 		.ops = &mt_machine_audio_ops,
 	},
-#ifdef MEIZU_M80
+#ifdef Sharp_Z2
 	{
 		.name = "I2S0DL1_DUMMY",
 		.stream_name = MT_SOC_I2SDL1_DUMMY_STREAM_NAME,
@@ -1401,7 +1401,7 @@ static int __init mt_soc_snd_init(void)
 	memcpy(mt_soc_dai_component, mt_soc_dai_common, sizeof(mt_soc_dai_common));
 
 	daiLinkNum += ARRAY_SIZE(mt_soc_dai_common);
-#ifdef MEIZU_M80
+#ifdef Sharp_Z2
 	node = of_find_compatible_node(NULL, NULL,"nxp,tfa98xx");
 #ifdef CONFIG_SND_SOC_TFA98XX
 	if (node != NULL) {
@@ -1443,7 +1443,7 @@ static int __init mt_soc_snd_init(void)
 	pr_warn("mt_soc_snd_init dai_link = %p\n", snd_soc_card_mt.dai_link);
 
 //only for test
-#ifdef MEIZU_M80
+#ifdef Sharp_Z2
 	/* create debug file */
 	mt_sco_audio_debugfs = debugfs_create_file(DEBUG_FS_NAME,
 	   0666, NULL, (void *) DEBUG_FS_NAME, &mtaudio_debug_ops);
