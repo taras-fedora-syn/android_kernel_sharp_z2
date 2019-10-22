@@ -1276,7 +1276,7 @@ static struct snd_soc_dai_link mt_soc_dai_common[] = {
 };
 
 
-#ifdef MEIZU_M80
+#ifdef Sharp_Z2
 static struct snd_soc_dai_link mt_soc_extspk_dai[] = {
 	{
 		.name = "ext_Smartpa_Multimedia",
