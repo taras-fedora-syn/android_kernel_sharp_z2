@@ -21,7 +21,7 @@
     #include <linux/pm.h>
     #include <linux/earlysuspend.h>
 #endif
-#include "../../../../spi/mediatek/mt6735/mt_spi.h"
+#include "../../../../spi/mediatek/mt6797/mt_spi.h"
 #include <linux/miscdevice.h>
 #include <linux/power_supply.h>
 #include <linux/regulator/consumer.h>
